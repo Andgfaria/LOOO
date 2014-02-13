@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self carregarUsuario];
 	// Do any additional setup after loading the view.
 }
 
@@ -41,7 +42,28 @@
 }
 
 -(IBAction)retornarView:(UIStoryboardSegue *)sender {
-    NSLog(@"voltei");
+    [self carregarUsuario];
 }
 
+-(void)carregarUsuario {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"loginEfetuado"]) {
+        [_botaoCriarPerfil setHidden:YES];
+        [_botaoCriarGuerreiro setHidden:NO];
+        [_botaoDeslogar setHidden:NO];
+    }
+    else {
+        [_botaoCriarPerfil setHidden:NO];
+        [_botaoCriarGuerreiro setHidden:YES];
+        [_botaoDeslogar setHidden:YES];
+    }
+}
+
+- (IBAction)deslogar:(id)sender {
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"loginEfetuado"];
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"usuarioLogado"];
+    [_botaoCriarGuerreiro setHidden:YES];
+    [_botaoCriarPerfil setHidden:NO];
+    [_botaoDeslogar setHidden:YES];
+    
+}
 @end

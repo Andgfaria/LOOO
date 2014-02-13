@@ -50,6 +50,10 @@
         if ([_txtSenhaPerfil.text isEqualToString:_txtConfirmacaoSenhaPerfil.text]) {
             Perfil *novo = [[Perfil alloc] initWithNome:_txtNomePerfil.text eSenha:_txtSenhaPerfil.text];
             [persistenciaPerfil persistirPerfil:novo];
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"loginEfetuado"];
+            [[NSUserDefaults standardUserDefaults] setObject:_txtNomePerfil.text forKey:@"usuarioLogado"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+     //       [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
         }
         else {
             UIAlertView *erro = [[UIAlertView alloc] initWithTitle:@"Senhas Não Coincidem" message:@"As senhas inseridas não coincidiram." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
