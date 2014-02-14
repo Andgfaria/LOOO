@@ -91,6 +91,7 @@
                                 </state>
                                 <connections>
                                     <action selector="criarPerfil:" destination="GUI-Qd-4xX" eventType="touchUpInside" id="dM6-3O-1ss"/>
+                                    <segue destination="P6M-Bi-BC4" kind="unwind" identifier="segueCriarPerfil" unwindAction="retornarView:" id="6iQ-g8-gV0"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do Perfil" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fuE-BI-Lfr">

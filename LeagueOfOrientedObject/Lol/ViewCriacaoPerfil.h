@@ -14,5 +14,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtConfirmacaoSenhaPerfil;
 @property (weak, nonatomic) IBOutlet UIButton *botaoCriarPerfil;
 - (IBAction)criarPerfil:(id)sender;
-
+@property BOOL entradaOK;
 @end
