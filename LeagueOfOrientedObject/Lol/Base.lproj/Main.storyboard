@@ -26,8 +26,8 @@
                                     <segue destination="GUI-Qd-4xX" kind="modal" identifier="segueCriarPerfil" id="g9V-O5-dkb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="League Of Oriented Object" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zB-fS-ZJd">
-                                <rect key="frame" x="33" y="78" width="255" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="League Of Oriented Objects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zB-fS-ZJd">
+                                <rect key="frame" x="33" y="78" width="259" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="highlightedColor"/>
@@ -52,10 +52,21 @@
                                     <action selector="deslogar:" destination="7ik-6Q-vid" eventType="touchUpInside" id="uVQ-O3-oMt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xys-SG-hMo">
+                                <rect key="frame" x="113" y="326" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Acessar Perfil">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bGV-ys-SLx" kind="modal" identifier="segueLogin" id="z0W-zg-oax"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="botaoAcessarPerfil" destination="xys-SG-hMo" id="aHS-d7-YEY"/>
                         <outlet property="botaoCriarGuerreiro" destination="RLU-Nm-BMS" id="vdP-eN-H7r"/>
                         <outlet property="botaoCriarPerfil" destination="6PY-og-nNB" id="rPf-nt-3fb"/>
                         <outlet property="botaoDeslogar" destination="Ugc-9W-xNp" id="3JZ-Bz-Enq"/>
@@ -64,6 +75,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uwc-rt-M73" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="41" y="109"/>
+        </scene>
+        <!--View Login-->
+        <scene sceneID="0BR-pI-kc0">
+            <objects>
+                <viewController id="bGV-ys-SLx" customClass="ViewLogin" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WT5-kF-eDm"/>
+                        <viewControllerLayoutGuide type="bottom" id="XWn-1Q-h6B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vag-Lg-f24">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Acessar Perfil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHR-T4-QnS">
+                                <rect key="frame" x="96" y="78" width="128" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do Perfil" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NGE-kR-WEs">
+                                <rect key="frame" x="20" y="141" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bGV-ys-SLx" id="XAS-Oj-cuW"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HXI-Hf-9Ea">
+                                <rect key="frame" x="20" y="200" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bGV-ys-SLx" id="i1j-5d-Tkc"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eu-Es-t2K">
+                                <rect key="frame" x="20" y="20" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancelar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tZr-f1-GdF" kind="unwind" unwindAction="retornarView:" id="P2I-KT-v0U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpG-ba-LeF">
+                                <rect key="frame" x="270" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="acessarPerfil:" destination="bGV-ys-SLx" eventType="touchUpInside" id="l4P-ef-8zL"/>
+                                    <segue destination="tZr-f1-GdF" kind="unwind" unwindAction="retornarView:" id="EeZ-wD-tD4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtNomePerfil" destination="NGE-kR-WEs" id="Clm-kE-DLj"/>
+                        <outlet property="txtSenha" destination="HXI-Hf-9Ea" id="6HN-a3-4qM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zj1-0N-emu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="tZr-f1-GdF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="32"/>
         </scene>
         <!--View Criacao Perfil-->
         <scene sceneID="fxS-mU-Nnb">
@@ -78,7 +160,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Criação de Perfil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMU-57-qVG">
-                                <rect key="frame" x="84" y="82" width="152" height="21"/>
+                                <rect key="frame" x="84" y="78" width="152" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="highlightedColor"/>
@@ -145,7 +227,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7M9-MG-W1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="P6M-Bi-BC4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="434" y="108"/>
+            <point key="canvasLocation" x="470" y="-555"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">

@@ -29,6 +29,7 @@
 		1D7E9C0118ACDABC00DFF563 /* Espada.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9BFB18ACDABC00DFF563 /* Espada.m */; };
 		1D7E9C0218ACDABC00DFF563 /* Magia.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9BFD18ACDABC00DFF563 /* Magia.m */; };
 		1D7E9C0518ACF93A00DFF563 /* SegundaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9C0418ACF93A00DFF563 /* SegundaViewController.m */; };
+		6517AB4A18AE8599003F8601 /* ViewLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6517AB4918AE8599003F8601 /* ViewLogin.m */; };
 		6528F48618AD28BB00517718 /* ViewInicial.m in Sources */ = {isa = PBXBuildFile; fileRef = 6528F48518AD28BB00517718 /* ViewInicial.m */; };
 		6528F48918AD2A7200517718 /* ViewCriacaoPerfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6528F48818AD2A7200517718 /* ViewCriacaoPerfil.m */; };
 		6528F48C18AD2C7700517718 /* Perfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6528F48B18AD2C7700517718 /* Perfil.m */; };
@@ -81,6 +82,8 @@
 		1D7E9BFD18ACDABC00DFF563 /* Magia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Magia.m; sourceTree = "<group>"; };
 		1D7E9C0318ACF93A00DFF563 /* SegundaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SegundaViewController.h; path = ../SegundaViewController.h; sourceTree = "<group>"; };
 		1D7E9C0418ACF93A00DFF563 /* SegundaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SegundaViewController.m; path = ../SegundaViewController.m; sourceTree = "<group>"; };
+		6517AB4818AE8599003F8601 /* ViewLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewLogin.h; sourceTree = "<group>"; };
+		6517AB4918AE8599003F8601 /* ViewLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewLogin.m; sourceTree = "<group>"; };
 		6528F48418AD28BB00517718 /* ViewInicial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewInicial.h; sourceTree = "<group>"; };
 		6528F48518AD28BB00517718 /* ViewInicial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewInicial.m; sourceTree = "<group>"; };
 		6528F48718AD2A7200517718 /* ViewCriacaoPerfil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCriacaoPerfil.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				1D7E9BC718ACD8BF00DFF563 /* AppDelegate.h */,
 				1D7E9BC818ACD8BF00DFF563 /* AppDelegate.m */,
 				1D7E9BCA18ACD8BF00DFF563 /* Main.storyboard */,
+				6517AB4818AE8599003F8601 /* ViewLogin.h */,
+				6517AB4918AE8599003F8601 /* ViewLogin.m */,
 				656BAB8218AD3401008ED93A /* PerfilDAO.h */,
 				656BAB8318AD3401008ED93A /* PerfilDAO.m */,
 				6528F48A18AD2C7700517718 /* Perfil.h */,
@@ -327,6 +332,7 @@
 				1D7E9BC918ACD8BF00DFF563 /* AppDelegate.m in Sources */,
 				1D7E9BFE18ACDABC00DFF563 /* Arma.m in Sources */,
 				1D7E9BC518ACD8BF00DFF563 /* main.m in Sources */,
+				6517AB4A18AE8599003F8601 /* ViewLogin.m in Sources */,
 				1D7E9BF318ACDAA500DFF563 /* Jogador.m in Sources */,
 				6528F48618AD28BB00517718 /* ViewInicial.m in Sources */,
 				1D7E9BFF18ACDABC00DFF563 /* ArcoEFlecha.m in Sources */,

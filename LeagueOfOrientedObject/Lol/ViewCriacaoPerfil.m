@@ -43,6 +43,10 @@
 }
 
 - (IBAction)criarPerfil:(id)sender {
+    entradaOK = true;
+    [_txtNomePerfil resignFirstResponder];
+    [_txtSenhaPerfil resignFirstResponder];
+    [_txtConfirmacaoSenhaPerfil resignFirstResponder];
     PerfilDAO *persistenciaPerfil = [[PerfilDAO alloc] init];
     Perfil *existente = [persistenciaPerfil buscarPerfil:_txtNomePerfil.text];
     if (existente != nil) {

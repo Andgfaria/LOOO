@@ -48,11 +48,13 @@
 -(void)carregarUsuario {
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"loginEfetuado"]) {
         [_botaoCriarPerfil setHidden:YES];
+        [_botaoAcessarPerfil setHidden:YES];
         [_botaoCriarGuerreiro setHidden:NO];
         [_botaoDeslogar setHidden:NO];
     }
     else {
         [_botaoCriarPerfil setHidden:NO];
+        [_botaoAcessarPerfil setHidden:NO];
         [_botaoCriarGuerreiro setHidden:YES];
         [_botaoDeslogar setHidden:YES];
     }
@@ -63,6 +65,7 @@
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"usuarioLogado"];
     [_botaoCriarGuerreiro setHidden:YES];
     [_botaoCriarPerfil setHidden:NO];
+    [_botaoAcessarPerfil setHidden:NO];
     [_botaoDeslogar setHidden:YES];
     
 }

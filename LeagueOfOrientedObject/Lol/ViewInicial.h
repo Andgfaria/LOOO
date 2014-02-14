@@ -12,6 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *botaoCriarPerfil;
 @property (weak, nonatomic) IBOutlet UIButton *botaoCriarGuerreiro;
+@property (weak, nonatomic) IBOutlet UIButton *botaoAcessarPerfil;
+
 @property (weak, nonatomic) IBOutlet UIButton *botaoDeslogar;
 - (IBAction)deslogar:(id)sender;
 

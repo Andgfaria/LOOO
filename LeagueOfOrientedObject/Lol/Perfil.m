@@ -11,19 +11,19 @@
 -(id)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
     if (self) {
-        self.nome = [aDecoder decodeObjectForKey:@"nome"];
-        self.senha = [aDecoder decodeObjectForKey:@"senha"];
-        self.guerreiro1 = [aDecoder decodeObjectForKey:@"guerreiro1"];
-        self.guerreiro2 = [aDecoder decodeObjectForKey:@"guerreiro2"];
+        nome = [aDecoder decodeObjectForKey:@"nome"];
+        senha = [aDecoder decodeObjectForKey:@"senha"];
+        guerreiro1 = [aDecoder decodeObjectForKey:@"guerreiro1"];
+        guerreiro2 = [aDecoder decodeObjectForKey:@"guerreiro2"];
     }
     return self;
 }
 
 -(void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:self.nome forKey:@"nome"];
-    [aCoder encodeObject:self.senha forKey:@"senha"];
-    [aCoder encodeObject:self.guerreiro1 forKey:@"guerreiro1"];
-    [aCoder encodeObject:self.guerreiro2 forKey:@"guerreiro2"];
+    [aCoder encodeObject:nome forKey:@"nome"];
+    [aCoder encodeObject:senha forKey:@"senha"];
+    [aCoder encodeObject:guerreiro1 forKey:@"guerreiro1"];
+    [aCoder encodeObject:guerreiro2 forKey:@"guerreiro2"];
 }
 
 //Cria um perfil sem guerreiros.
