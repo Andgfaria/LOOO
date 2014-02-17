@@ -8,6 +8,8 @@
 
 #import "ViewInicial.h"
 #import "ViewCriacaoPerfil.h"
+#import "Perfil.h"
+#import "PerfilDAO.h"
 
 @interface ViewInicial ()
 
@@ -27,7 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    PerfilDAO *perfis = [[PerfilDAO alloc]init];
+    Perfil *perfil = [perfis buscarPerfil:[[NSUserDefaults standardUserDefaults] objectForKey:@"usuarioLogado"]];
+    NSLog(@"%@\n%@\n",perfil.guerreiro1,perfil.guerreiro2);
     [self carregarUsuario];
+    
 	// Do any additional setup after loading the view.
 }
 
@@ -43,6 +49,9 @@
 
 -(IBAction)retornarView:(UIStoryboardSegue *)sender {
     [self carregarUsuario];
+    PerfilDAO *perfis = [[PerfilDAO alloc]init];
+    Perfil *perfil = [perfis buscarPerfil:[[NSUserDefaults standardUserDefaults] objectForKey:@"usuarioLogado"]];
+    NSLog(@"%@\n%@\n",perfil.guerreiro1,perfil.guerreiro2);
 }
 
 -(void)carregarUsuario {

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class Arma;
-@interface Jogador : NSObject
+@interface Jogador : NSObject <NSCoding>
 {
     NSString *nome;
     int raca;

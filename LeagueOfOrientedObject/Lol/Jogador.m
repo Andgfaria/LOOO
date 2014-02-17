@@ -52,6 +52,28 @@ static const int ANAO = 3;
     return self;
 }
 
+-(id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super init];
+    if (self) {
+        nome = [aDecoder decodeObjectForKey:@"nome"];
+        raca = [aDecoder decodeIntForKey:@"raca"];
+        vida = [aDecoder decodeFloatForKey:@"vida"];
+        forcaEscudo = [aDecoder decodeIntForKey:@"forcaEscudo"];
+        armaPrimaria = [aDecoder decodeObjectForKey:@"armaPrimaria"];
+        armaSecundaria = [aDecoder decodeObjectForKey:@"armaSecundaria"];
+    }
+    return self;
+}
+
+-(void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:nome forKey:@"nome"];
+    [aCoder encodeInt:raca forKey:@"raca"];
+    [aCoder encodeFloat:vida forKey:@"vida"];
+    [aCoder encodeInt:forcaEscudo forKey:@"forcaEscudo"];
+    [aCoder encodeObject:armaPrimaria forKey:@"armaPrimaria"];
+    [aCoder encodeObject:armaSecundaria forKey:@"armaSecundaria"];
+}
+
 
 -(float) ataque:(Arma *)armaEscolhida
 {

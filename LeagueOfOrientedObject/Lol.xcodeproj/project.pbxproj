@@ -34,6 +34,7 @@
 		6528F48918AD2A7200517718 /* ViewCriacaoPerfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6528F48818AD2A7200517718 /* ViewCriacaoPerfil.m */; };
 		6528F48C18AD2C7700517718 /* Perfil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6528F48B18AD2C7700517718 /* Perfil.m */; };
 		656BAB8418AD3401008ED93A /* PerfilDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 656BAB8318AD3401008ED93A /* PerfilDAO.m */; };
+		65F7ECA318B295F400D67152 /* ViewCriacaoGuerreiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7ECA218B295F400D67152 /* ViewCriacaoGuerreiro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		6528F48B18AD2C7700517718 /* Perfil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Perfil.m; sourceTree = "<group>"; };
 		656BAB8218AD3401008ED93A /* PerfilDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfilDAO.h; sourceTree = "<group>"; };
 		656BAB8318AD3401008ED93A /* PerfilDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerfilDAO.m; sourceTree = "<group>"; };
+		65F7ECA118B295F400D67152 /* ViewCriacaoGuerreiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCriacaoGuerreiro.h; sourceTree = "<group>"; };
+		65F7ECA218B295F400D67152 /* ViewCriacaoGuerreiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCriacaoGuerreiro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 				1D7E9BC718ACD8BF00DFF563 /* AppDelegate.h */,
 				1D7E9BC818ACD8BF00DFF563 /* AppDelegate.m */,
 				1D7E9BCA18ACD8BF00DFF563 /* Main.storyboard */,
+				65F7ECA118B295F400D67152 /* ViewCriacaoGuerreiro.h */,
+				65F7ECA218B295F400D67152 /* ViewCriacaoGuerreiro.m */,
 				6517AB4818AE8599003F8601 /* ViewLogin.h */,
 				6517AB4918AE8599003F8601 /* ViewLogin.m */,
 				656BAB8218AD3401008ED93A /* PerfilDAO.h */,
@@ -325,6 +330,7 @@
 				1D7E9BCF18ACD8BF00DFF563 /* ViewController.m in Sources */,
 				6528F48918AD2A7200517718 /* ViewCriacaoPerfil.m in Sources */,
 				1D7E9C0218ACDABC00DFF563 /* Magia.m in Sources */,
+				65F7ECA318B295F400D67152 /* ViewCriacaoGuerreiro.m in Sources */,
 				6528F48C18AD2C7700517718 /* Perfil.m in Sources */,
 				656BAB8418AD3401008ED93A /* PerfilDAO.m in Sources */,
 				1D7E9C0018ACDABC00DFF563 /* Machado.m in Sources */,
